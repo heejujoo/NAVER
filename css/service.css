@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+#cotentBox{
+  width: 100%;
+}
+article{ padding: 150px 0;}
+article>h3{
+  font: bold 35px 'poppings',sans-serif;
+  text-align: center;
+  margin-bottom: 200px;
+}
+article>.gallery{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+article>.gallery>li{
+  width: 170px; height: 170px;
+  background: url('../images/naver.png') no-repeat center/100%;
+  box-shadow: 5px -5px 10px #8a8a8a;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+article>.gallery>li:nth-child(2){
+  background-image: url('../images/wep.png');
+}
+article>.gallery>li:nth-child(3){
+  background-image: url('../images/line.png');
+}
+article>.gallery>li:nth-child(4){
+  background-image: url('../images/whale.png');
+}
+article>.gallery>li:nth-child(5){
+  background-image: url('../images/vlive.png');
+}
+article>.gallery>li:nth-child(6){
+  background-image: url('../images/clova.png');
+}
+article>.gallery>li:nth-child(7){
+  background-image: url('../images/papago.png');
+}
+article>.gallery>li:nth-child(8){
+  background-image: url('../images/series.png');
+  margin-right: 0;
+}
+
+
+article>.show{
+  width: 100%;
+  height: 800px;
+  background: url('../images/bb.jpg') center;
+}
+article>.show>figure{
+
+}
+article>.show figcaption{}
+article>.show figcaption>dl{}
+article>.show figcaption>dt{}
+article>.show figcaption>dd{}
+
+
+
+/* 다운로드 바로가기 */
+article>.show ul{}
+article>.show ul>li{}
+article>.show ul>li.i01{
+  background: url('../images/home.png');
+}
+article>.show ul>li.i02{
+  background: url('../images/google.png');
+}
+article>.show ul>li.i03{
+  background: url('../images/app.png');
+}
+article>.show ul>li.i01:hover{
+  background: url('../images/home_over.png');
+}
+article>.show ul>li.i02:hover{
+  background: url('../images/google_over.png');
+}
+article>.show ul>li.i03:hover{
+  background: url('../images/app_over.png');
+}

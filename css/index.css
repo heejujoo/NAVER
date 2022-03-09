@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.hide{
+  width: 0; height: 0;
+  font-size: 0; line-height: 0;
+  position: absolute; visibility: hidden;
+}
+img{max-width: 100%;}
+
+/* header */
+#headerWrap{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left:0; top:0;
+  z-index: 99999;
+}
+#headerWrap>header{
+  width: 1300px; 
+  margin: 0 auto;
+  padding: 5px 0 8px;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+}
+header>h1{flex-grow: 1;}
+header>nav{
+  flex-grow:1;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+header>nav>ul{
+  /* background-color: orange; */
+}
+nav>ul>li{
+  display: inline;
+  margin-left: 78px;
+
+}
+nav>ul>li>a{
+  font: 18px '나눔고딕',sans-serif;
+  color: #424242;
+}
+nav>ul>li>a:hover{
+  color: #000;
+  font-weight: bold;
+}
+header>nav>.info{
+  margin-left: 200px;
+}
+header>nav>.info>li{
+  margin-left: 20px;
+}
+header>nav>.info>li>a{
+  font-size: 16px;
+  color: #999;
+}
+header>nav>.info>li>a:hover{
+  color: #222;
+  font-weight: normal;
+}
+
+/* footer */
+#footerWrap{
+  width: 100%;
+  padding: 70px 0 20px;
+  background-color: #127C3A;
+}
+footer{
+  width: 1300px;
+  margin: 0 auto;
+}
+footer>div{
+  display: flex;
+  align-items: center;
+}
+footer dt.logo{
+  width: 160px;
+  padding: 100px 50px;
+  border-right: 1px solid #0B4E24;
+  background: url('../images/logo_b.png') no-repeat center;
+}
+footer dd{
+  margin-left: 100px;
+}
+footer dd>ul{
+  /* background-color: red; */
+}
+footer dd li{
+  font: 15px/45px '나눔고딕',sans-serif;
+  color: #fff;
+  padding-right:30px;
+}
+footer p{
+  flex-grow: 2;
+  color: #fff;
+  text-align: right;
+  align-self: flex-end;
+}
+footer select{
+  height: 80px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: initial;
+  border: 1px solid #fff;
+  font: 15px '나눔고딕',sans-serif;
+  color: #fff;
+  margin-bottom: 50px;
+  text-indent: 5px;
+}
+footer small{
+  display: block;
+}
+
