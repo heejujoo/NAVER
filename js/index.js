@@ -42,9 +42,13 @@ $(function(){
   $('.pull').css('margin-left','-'+liWidth+'px');
 });
 
+
 $('#prev').on('click',function(e){
   $('.pull').animate({marginLeft:'-='+liWidth+'px'},300,function(){
   $('.pull>li:first').appendTo('.pull');
   $('.pull').css('margin-left','-'+liWidth+'px');
+
+
+  
   });
 });

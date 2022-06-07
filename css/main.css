@@ -172,7 +172,6 @@ animation: imgAni 0.7s alternate ;
   margin-bottom: 90px;
 }
 #box03 div{
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
