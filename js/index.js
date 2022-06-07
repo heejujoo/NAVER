@@ -1,6 +1,6 @@
 $(function(){
 let bWidth = $('#show>ul>li').width();
-console.log(bWidth);
+// console.log(bWidth);
 $('#show>ul>li:last-child').prependTo('#show>ul');
 $('#show>ul').css('margin-left','-'+bWidth+'px');
 //버튼
@@ -28,14 +28,24 @@ $('#banner>.prev').on('click',function(e){
     });
   }
 
+});//전체
 
-// 서비스 갤러리
-$('#box02 ul>li').on('click',function(){
-  let img = $(this).attr('url');
-  console.log(img); 
-  $(this).attr('url')
+// 서비스 구간 갤러리
+//prev 버튼 누르면 다음걸로 text도 바꾸기
+//객체사용
+
+let liWidth = document.querySelector('.pull>li').clientWidth;
+// console.log(liWidth);
+
+$(function(){
+  $('.pull>li:last').prependTo('.pull');
+  $('.pull').css('margin-left','-'+liWidth+'px');
 });
 
-
-
-});//전체
+$('#prev').on('click',function(e){
+  $('.pull').animate({marginLeft:'-='+liWidth+'px'},300,function(){
+  $('.pull>li:first').appendTo('.pull');
+  $('.pull').css('margin-left','-'+liWidth+'px');
+  
+  });
+});

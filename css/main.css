@@ -23,8 +23,6 @@
 #banner>#show>ul{ 
   width: 300%; 
   height: 800px;
-  /* position: absolute;
-  top:0 ; left: 0; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -136,15 +134,14 @@ animation: imgAni 0.7s alternate ;
 }
 /* gallery */
 #box02>article>.view{
-  width: 835px;
+  width: 820px;
   margin: 0 430px;
   overflow: hidden;
 }
 #box02>article>.view>.pull{
   width:2100px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #box02>article .pull>li{
   width: 400px;
