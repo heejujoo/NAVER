@@ -82,8 +82,6 @@
 #content h3{
   font: bold 30px '나눔고딕',sans-serif;
   margin-bottom: 50px;
-
-  /* background-color: indigo; */
 }
 
 /* #box01 */
@@ -95,12 +93,8 @@
   position: relative;
   display:flex;
 }
-#box01 div.left{
-  /* background-color: lightgreen; */
-}
-/* #box01>article>div>h3{
-  margin-bottom: 140px;
-} */
+#box01 div.left{}
+
 #box01 p{
   text-align: right;
   font: 18px/43px '나눔고딕',sans-serif;
@@ -134,6 +128,7 @@ animation: imgAni 0.7s alternate ;
 #box02>article{
   width: 1300px;
   margin: 0 auto;
+  position: relative;
 
 }
 #box02>article>h3{
@@ -141,9 +136,8 @@ animation: imgAni 0.7s alternate ;
 }
 /* gallery */
 #box02>article>.view{
-  width: 850px;
-  margin: 0 427px;
-  position: relative;
+  width: 835px;
+  margin: 0 430px;
   overflow: hidden;
 }
 #box02>article>.view>.pull{
@@ -154,23 +148,21 @@ animation: imgAni 0.7s alternate ;
 }
 #box02>article .pull>li{
   width: 400px;
-  position: relative;
   margin-bottom: 80px;
 }
 
-
 /* 갤러리 버튼 */
 /* #prev{} */
-#next{
+#box02 #prev{
   position: absolute;
-  right:0;
+  left:0;
   top: 50%;
-  margin-top: -60px;
+  /* margin-top: -60px; */
   width: 48px; height: 48px;
-  background: url('../images/g_button_hover.png');
+  background: url('../images/prv_button_hover.png');
 }
-#next:hover{
-  background: url('../images/g_button.png');
+#box02 #prev:hover{
+  background: url('../images/prv_button.png');
 }
 
 /* #box03 news*/
