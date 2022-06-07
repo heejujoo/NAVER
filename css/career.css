@@ -1,0 +1,206 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200;400;600&display=swap');
+/*영문 font-family: 'Smooch Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;400;600&display=swap');
+/*한글 font-family: 'IBM Plex Sans KR', sans-serif; */
+
+#wrap{
+  width: 100%;
+  position: relative;
+  background-color: #eaeaea;
+
+}
+#banner{
+  width: 100%; height: 800px; 
+  background: url('../images/career.jpg') no-repeat center top;
+  background-size: 100% auto;
+}
+#banner>p{
+  font: bold 55px/50px 'Smooch Sans','나눔고딕', sans-serif;
+  color: #fff;
+  padding: 400px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+#banner>p>span{
+  border-top: 1px solid #fff;
+  padding-top: 3.5px;
+  font-size: 28px;
+}
+
+#main{
+  padding-top: 80px;
+}
+
+/* 공통 */
+section{
+  box-sizing: border-box;
+  padding: 100px 0;
+}
+section h3{
+  font: bold 35px 'IBM Plex Sans KR', sans-serif;
+  color: #1c1c1c;
+  margin-bottom: 50px;
+  /* border-bottom: 1px solid #2b2b2b; */
+}
+
+/* box01 */
+#box01{
+  width: 1300px;
+  margin: 0 auto 80px;
+}
+#box01>div{
+  display: flex;
+  justify-content: space-around;
+}
+#box01>div>figure{
+  width: 24%;
+  height: 450px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+#box01>div>figure>img{
+  margin-bottom: 15px;
+}
+
+#box01 figure>figcaption{
+  /* box-sizing: border-box; */
+  padding: 8px 12px;
+  color: #1c1c1c;
+}
+#box01 figure>figcaption>dl{}
+#box01 figure>figcaption>dl>dt{
+  font:bold 20px '나눔고딕',sans-serif;
+  margin-bottom: 20px;
+}
+#box01 figure>figcaption>dl>dd{
+  font:18px/25px '나눔고딕',sans-serif;
+  text-align: justify;
+
+}
+
+/* box02 */
+#box02{
+  margin-bottom: 80px;
+  /* background-color: yellowgreen; */
+  background: url('../images/cc.jpg') no-repeat top;
+  background-size: 100% auto;
+  padding: 120px 0;
+}
+#box02>div{
+  width: 1300px;
+  margin: 0 auto;
+}
+#box02>div>h3{
+  text-align: right;
+  padding: 0 0 40px;
+ }
+#box02>div>ul{ 
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+}
+#box02>div>ul>li{
+  position: relative;
+}
+#box02>div>ul>li>p{
+  position: absolute;
+  top: -80px; left: 50%; margin-left: -25px;
+  width: 50px; height: 50px;
+  /* background-color: #fff; */
+  /* border-radius: 50%;   */
+  background: url('../images/c01.png') no-repeat center;
+  background-size: 100% auto; 
+}
+#box02>div>ul>li:nth-child(2)>p{background-image: url('../images/c02.png');}
+#box02>div>ul>li:nth-child(3)>p{background-image: url('../images/c03.png');}
+#box02>div>ul>li:nth-child(4)>p{background-image: url('../images/c04.png');}
+
+#box02>div>ul>li:hover>p{
+  background-image: url('../images/c01_h.png');
+}
+#box02>div>ul>li:nth-child(2):hover>p{background-image: url('../images/c02_h.png');}
+#box02>div>ul>li:nth-child(3):hover>p{background-image: url('../images/c03_h.png');}
+#box02>div>ul>li:nth-child(4):hover>p{background-image: url('../images/c04_h.png');}
+
+
+
+#box02 dl{
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  color: #eee;
+  /* color: #171717; */
+  text-align: center;
+  font: 20px/30px '나눔고딕',sans-serif;
+}
+#box02 dl:hover{
+  color: #0B4E24;
+}
+ #box02 dl>dt{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+#box02 dl>dd{
+  color: #eaeaea;
+  font-size: 18px;
+  text-align: justify;
+}
+#box02 dl:hover>dd{
+  font-weight: bold;
+  color: #0B4E24;
+}
+
+/* #box03 */
+#box03{
+  width: 1300px;
+  margin: 0 auto 80px;
+}
+
+#box03>div{
+  background: url('../images/benefits.jpg') no-repeat center;
+  background-size: 100% auto;
+}
+#box03>div>div{
+  display: flex;
+  justify-content: space-evenly;
+}
+#box03>div>div>figure{
+  width: 324px;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 180px 0;
+  box-sizing: border-box;
+  /* background-color: #000; */
+}
+#box03>div>div>figure:hover{
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+#box03 div>figure>img{
+  width: 90px;
+  margin-bottom: 20px;
+}
+#box03 div>figure>figcaption{
+  
+}
+#box03 div>figure>figcaption>dl{
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+#box03 div>figure>figcaption>dl>dt{
+  margin-bottom: 30px;
+  font: 20px '나눔고딕', sans-serif;
+}
+#box03 figure>figcaption>dl>dd{
+  visibility: hidden;
+  font: 18px '나눔고딕', sans-serif;
+}
+#box03 figure:hover>figcaption>dl>dt{
+  font-weight: bold;
+}
+#box03 figure:hover>figcaption>dl>dd{
+  visibility: visible;
+
+}
